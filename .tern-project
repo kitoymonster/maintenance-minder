@@ -1,0 +1,19 @@
+{
+  "ecmaVersion": 6,
+  "libs": [
+    "ecma5",
+    "browser",
+    "jquery"
+  ],
+  "plugins": {
+    "node": {
+      
+    },
+    "angular1": {
+      
+    },
+    "bootstrap": {
+      
+    }
+  }
+}
