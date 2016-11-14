@@ -1,18 +1,14 @@
-{{message}}
+<div class="container-fluid">
+	<h1 class="page-header">{{ message }}</h1>
 	<table class="table table-striped">
-	   <tr ng-repeat="user in users">
-	       <td>{{user.id}}</td>
-	       <td>{{user.first_name}}</td>
-	   </tr>
+		<thead>
+			<td> ID </td>
+			<td> first_name </td>
+		</thead>
+		<tr ng-repeat="user in users">
+			<td>{{user.id}}</td>
+			<td>{{user.first_name}}</td>
+			<td><button type="submit" class="btn btn-danger">Delete</button></td>
+		</tr>
 	</table>
-
-	
-	<table ng-table="vm.tableParams" class="table" show-filter="true">
-      <tr ng-repeat="user in data">
-          <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
-              {{user.name}}</td>
-          <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
-              {{user.age}}</td>
-      </tr>
-  </table>
-</table>
+</div>
